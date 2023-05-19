@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Catamaran:wght@400;500;700;800;900&family=Kalam:wght@300;400;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;0,800;0,900;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*,
+*::before,
+*::after {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   background-color: blanchedalmond;
+   font-family: 'Catamaran', sans-serif;
+   font-size: 20px;
+}
+
+a:link,
+a:visited,
+a:active {
+   text-decoration: underline;
+   font-weight: bold;
+   color: #4C1412;
+}
+
+a:hover {
+   text-decoration: none;
+   color: chocolate;
+}
+
+#header {
+   display: grid;
+   place-items: center;
+   align-content: center;
+   min-height: 500px;
+   background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.25)),
+               no-repeat bottom/cover url('assets/Red-Beans-and-Rice-Recipe1.jpg') fixed;
+   color: white;
+   border-bottom: 5px solid #4C1412;
+}
+
+#header > * {
+   margin: 0 auto;
+}
+
+#header h1 {
+   font-family: 'Kalam', cursive;
+   font-size: 3rem;
+   font-weight: bold;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+#header p {
+   font-family: 'Playfair Display', serif;
+   font-size: 1.75rem;
+   font-weight: 700;
+   text-shadow: 0 0 10px rgba(0, 0, 0, 1.0);
+}
+
+main,
+footer {
+   width: 100%;
+   margin: 0 auto;
+   padding: 20px;
+}
+
+.fleur {
+   display: flex;
+   justify-content: center;
+   font-weight: bold;
+   font-size: 3em;
+   color: #4C1412;
+}
+
+section {
+   min-width: 400px;
+   padding: 50px 20px;
+   margin: 50px auto;
+   text-align: justify;
+   hyphens: auto;
+   background-color: white;
+   border: 2px solid #4C1412;
+   border-radius: 12px;
+   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.3);
+}
+
+section h2 {
+   font-family: 'Playfair Display', serif;
+   font-weight: 900;
+   color: #4C1412;
+}
+
+section img {
+   width: 100%;
+}
+
+section .caption {
+   font-size: 0.9rem;
+   /* font-style: italic; */
+   color: slategray;
+}
+
+.img {
+   grid-area: img;
+}
+
+.info {
+   grid-area: info;
+}
+
+#beans,
+#sausage {
+   display: grid;
+   grid-template-columns: 40% 1fr;
+   grid-template-areas: 'img info';
+   gap: 20px;
+}
+
+#rice {
+   display: grid;
+   grid-template-columns: 1fr 40%;
+   grid-template-areas: 'info img';
+   gap: 20px;
+}
+
+.recipe-info {
+   margin-top: 20px;
+}
+
+#references {
+   text-align: unset;
+   overflow-wrap: break-word;
+}
+
+#references ul {
+   list-style: none;
+}
+
+#references .ref-title {
+   font-style: italic;
+}
+
+#references li {
+   margin-bottom: 10px;
+   padding-left: 2em;
+   text-indent: -2em;
+}
+
+#references li:last-of-type {
+   margin-bottom: unset;
+}
+
