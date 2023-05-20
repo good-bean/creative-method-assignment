@@ -124,7 +124,7 @@ section .caption {
 }
 
 .strong-emphasis {
-   font-weight: bold;
+   font-weight: 900;
    font-style: italic;
 }
 
