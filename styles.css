@@ -123,6 +123,11 @@ section .caption {
    gap: 20px;
 }
 
+.strong-emphasis {
+   font-weight: bold;
+   font-style: italic;
+}
+
 .recipe-info {
    margin-top: 20px;
 }
